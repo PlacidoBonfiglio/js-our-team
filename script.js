@@ -18,7 +18,14 @@ for (let member of team) {
 
 
 
-    items += `${member['name']}, ${member['role']}, <img src="img/${member['pic']}">`;
+    items += `
+    <div id="card">
+        <ul>
+            <li><img src="img/${member['pic']}"></li>
+            <li><h2>${member['name']}</h2></li>
+            <li><h5>${member['role']}</h5></li>
+        </ul>
+    </div>`;
 }
 
 membersListElement.innerHTML = items;
