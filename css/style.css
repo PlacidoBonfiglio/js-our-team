@@ -5,8 +5,13 @@
 #card {
     margin-bottom: 50px;
     background-color: #1a1a1a;
-    border-radius: 20px 20px 20px 0;
-    box-shadow: 5px 5px 20px grey
+    border-radius: 30px 30px 20px 0;
+    box-shadow: 5px 5px 20px grey;
+    cursor: pointer;
+}
+
+#card:hover {
+    scale: 1.1;
 }
 
 ul {
@@ -18,7 +23,7 @@ ul {
 }
 
 img {
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
     border-bottom: 1px solid grey;
 }
 
