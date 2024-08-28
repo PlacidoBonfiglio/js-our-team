@@ -7,7 +7,7 @@ const team = [
     { name: 'Walter Gordon', role: 'Office Manager', pic: 'walter-gordon-office-manager.jpg' },
     { name: 'Angela Lopez', role: 'Social Media Manager', pic: 'angela-lopez-social-media-manager.jpg' },
     { name: 'Scott Estrada', role: 'Developer', pic: 'scott-estrada-developer.jpg' },
-    { name: 'Barbara Ramos', role: 'Graphic Designer', pic: 'barbara-ramos-graphic-designer.jpg' },
+    { name: 'Barbara Ramos', role: 'Graphic Designer', pic: 'barbara-ramos-graphic-designer.jpg' }
 ]
 
 let items = '';
@@ -16,7 +16,9 @@ let items = '';
 for (let member of team) {
     console.log(member['name'], member['role'], member['pic']);
 
-    items += `${member['name']}, ${member['role']}, ${member['pic']}`;
+
+
+    items += `${member['name']}, ${member['role']}, <img src="img/${member['pic']}">`;
 }
 
 membersListElement.innerHTML = items;
